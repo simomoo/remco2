@@ -1,0 +1,26 @@
+{
+  "name": "remco-van-bladel",
+  "version": "0.0.1",
+  "description": "Website for Studio Remco van Bladel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quentin-f451/remco2.git"
+  },
+  "keywords": [],
+  "author": "Quentin Creuzet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quentin-f451/remco2/issues"
+  },
+  "homepage": "https://github.com/quentin-f451/remco2#readme",
+  "private": false,
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.24.0",
+    "webpack-cli": "^3.1.2"
+  }
+}

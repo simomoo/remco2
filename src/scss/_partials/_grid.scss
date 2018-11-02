@@ -1,0 +1,33 @@
+// INITIATE GRID
+
+// COLUMNS, SUBDIVISIONS, LEFT OFFSET
+
+$single-column: 100 / $number-of-columns;
+
+@mixin column($property) {
+  width: $single-column * $property + %;
+}
+
+@mixin subdivision($property) {
+  width: 100 / $property + %;
+}
+
+@mixin offsetcol($property) {
+  margin-left: $single-column * $property + %;
+}
+
+[class*="col-"], [class*="sub-"], [class*="off-"] {
+    float: left;
+}
+
+@for $i from 1 through $number-of-columns {
+  .col-#{$i} {
+    @include column($i);
+  }
+  .sub-#{$i} {
+    @include subdivision($i);
+  }
+  .off-#{$i} {
+    @include offsetcol($i);
+  }
+}
